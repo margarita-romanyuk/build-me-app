@@ -1,0 +1,608 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+/************************************************/
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(24, 155, 83);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h7 {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+footer {
+  color: white;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* changed rgb(31, 24, 69) */
+}
+
+html {
+  font-size: 1.2rem;
+  /* Adjust as needed */
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  /* changed rgb(31, 24, 69) */
+}
+
+/* Fixed Navbar */
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+  z-index: 2;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  border-bottom: 0.2rem solid;
+  background-color: #ffffff;
+  /* solid white */
+  backdrop-filter: none;
+  /* no blur */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Add transparency when scrolling */
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.5);
+  /* semi-transparent */
+  backdrop-filter: blur(6px);
+  /* blur glass effect */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #ddd;
+  /* Darker color for non-active links */
+  text-decoration: none;
+  /* Remove underline for non-active links */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  /* Hover effect to change color */
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+/* Active Navbar Link */
+.navbar-nav .nav-item .nav-link.active {
+  color: #fff !important;
+  /* White color for active link */
+  text-decoration: underline;
+  /* Underline for active link */
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #f2f3f4!important;
+}
+
+/*  courosel */
+.myslider {
+  /* margin-right:50px; */
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.carousel-inner img {
+  width: 100%;
+  /* Set width to 100% */
+  margin: auto;
+  /*min-height:200px;*/
+  height: 100%;
+  /* Make images fill the height */
+  object-fit: cover;
+  /* Ensure the image covers the div without distortion */
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+/* Ensure the carousel fills the screen's height */
+#myCarousel {
+  height: 100%;
+  /* Full viewport height */
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+
+}
+
+.carousel-indicators {
+  width: 70%;
+}
+
+.carousel-inner {
+  height: 100%;
+  /* Inherit height from the carousel */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: 1;
+}
+
+.carousel-inner .item {
+  height: 100%;
+  /* Each slide also fills the carousel height */
+}
+
+.carousel-caption {
+  width: 50%;
+  bottom: 100px !important;
+  padding: 120px;
+  /* Optional: Padding for inner content */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent box */
+  color: white;
+  /* Text color */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Shadow effect */
+  text-align: center;
+  /* Centers text inside */
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/***************************************/
+
+/************* ACORDIAN   **************/
+.accordion-button {
+  padding: 8px !important;
+  background-color: #113448 !important;
+  color: white !important;
+}
+
+.accordion-button::after {
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+/*************  END ACORDIAN   **************/
+
+.what-we-do {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: -10;
+  /*height: 400px;  Define height for the container */
+  overflow: hidden;
+  /* Ensure no extra content spills */
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 218) !important;
+}
+
+.what-we-do::before {
+  content: "";
+  /* background-image: url('../Images/side1.png'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 12px;
+  width: 98.4%;
+  height: 100%;
+  opacity: 0.4;
+  /* Adjust as needed */
+}
+
+.boxes {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Shadow effect */
+  color: white;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Shadow effect */
+  color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/********** AREAS  *******************/
+
+.area-1 {
+  height: 550px;
+  background: url(images/area1.jpg) center center no-repeat;
+  background-size: cover
+}
+
+.area-2 {
+  height: 550px;
+  background: url(images/area2.jpg) center center no-repeat;
+  background-size: cover
+}
+
+.are1-no-margin {
+  padding-top: 0px !important;
+}
+
+/*testimonial*/
+
+.testimonial {
+  text-align: center;
+  padding: 20px;
+  /*background: #f9f9f9;*/
+  border: 1px solid #ddd;
+  margin: 10px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background: none;
+}
+
+.glyphicon-chevron-right,
+.glyphicon-chevron-left {
+  color: black;
+  right: 0 !important;
+}
+
+.glyphicon-chevron-left {
+  color: black;
+  left: 0 !important;
+}
+
+.testimonial-img {
+  width: auto !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  margin-bottom: 10px !important;
+}
+
+.charthaight {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+
+/*  HEADER IMG  */
+.header-caption {
+  width: 40%;
+  top: 300px;
+  padding: 20px;
+  /* Optional: Padding for inner content */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent box */
+  color: rgb(255, 255, 255);
+  /* Text color */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Shadow effect */
+  text-align: center;
+  /* Centers text inside */
+  margin: 0 auto;
+  margin-bottom: 15px;
+  position: absolute;
+}
+
+.fixed-height {
+  height: 700px;
+}
+
+.fixed-height img {
+  height: 700px;
+  object-fit: cover;
+}
+
+.shadowed {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+  z-index: 1;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 3em;
+}
+
+.error {
+  color: red;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.fix-width {
+  width: 300px !important;
+}
+
+.image_bottom {
+  border-radius: 50%;
+}
+
+.job-card {
+  border-radius: 10px;
+  transition: all 0.3s ease -in -out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 50px 0 50px;
+  background-color: rgb(106, 232, 186);
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #2c3e50;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* CHANGED BUTTONS */
+.btn,
+.btn-primary,
+.btn-success,
+.btn-secondary {
+  padding: 5px 10px;
+  border: none !important;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  color: black !important;
+  background-color: rgb(249, 177, 32) !important;
+}
+
+.btn-primary{
+  background-color: rgb(140, 175, 232) !important;
+}
+
+.contact-card {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.list-group-item:last-child,
+.list-group-item:first-child,
+.list-group-item+.list-group-item {
+  background-color: #f0f6f5;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-width: 1px;
+  margin-bottom: 30px;
+}
+
+.job-box {
+  background-color: #edffef !important;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-width: 1px;
+}
+
+.btn-danger{
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(200, 28, 12) !important;
+
+}
+
+.bottom-box {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  height: 400px;  
+  overflow: hidden;
+  /* Ensure no extra content spills */
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 218) !important;
+}
+
+/*********************************************/
+
+ 
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.portfolio-header {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+ 
+}
+
+.section-title {
+  font-weight: 700;
+  color: #1a3c5e;
+  margin-bottom: 2rem;
+}
+
+.modern-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(145deg, #ffffff, #f0f4f8);
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.stats-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stats-icon {
+  font-size: 2rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background: #28a745;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #218838;
+}
+
+.fade -in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+                   
